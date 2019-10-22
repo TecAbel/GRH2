@@ -5,3 +5,7 @@ const hamburguesa = document.querySelector('.hamburguesa'),
 hamburguesa.addEventListener("click", () =>{
     navLinks.classList.toggle("open");
 });
+
+navLinks.addEventListener("click", () =>{
+    navLinks.classList.toggle("open");
+});

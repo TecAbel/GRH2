@@ -29,11 +29,11 @@
 </head>
 <body>
   <div class="jumbotron rounded-0 hero-index parallax">
-    <h1 class="display-3">Bienvendo a GRH &copy;</h1>
+    <h1 class="display-4">Bienvendo a GRH &copy;</h1>
     <hr class="my-4">
     <p class="lead">Generador de Reporte de Honorarios</p>
     <div class="down">
-      <h3>Organízate, crece y da un toque de formalidad a tu trabajo</h3>
+      <h3>Organízate, crece y dale un toque de formalidad a tu trabajo</h3>
       <i class="fas fa-arrow-down"></i>
     </div>
   </div>
@@ -42,14 +42,15 @@
       <i class="fas fa-bars"></i>
     </div>
     <ul class="nav-links">
-      <li><a href="#">Ingreso</a></li>
-      <li><a href="#">Registro</a></li>
-      <li><a href="#">Sobre GRH</a></li>
-      <li><a href="#">Desarrollador</a></li>
+      <li><a href="#login">Ingreso</a></li>
+      <li><a href="#frmRegistro">Registro</a></li>
+      <li><a href="#info">Sobre GRH</a></li>
+      <li><a href="#footer">Desarrollador</a></li>
     </ul>
   </nav>
   <div class="container clearfix">
       <div class="container der">
+        <div id="login"></div>
           <form method="POST" id="frmLogin" onsubmit="javascript: return false;">
             <div class="card bg-dark frmOscuro">
               <div class="card-header">
@@ -95,7 +96,7 @@
         </div>
     <div class="container izq">
       <article>
-        <h3>¿Para qué me puede servir GRH&copy;?</h3>
+        <h3 id="info">¿Para qué me puede servir GRH&copy;?</h3>
         <p>Te ayudamos en la administración de tus cobros, GRH&copy; desarrolla las siguientes tareas por ti:</p>
         <ul>
           <li>Administra tu lista de empleadores así como su información de contacto y la cuota ($ por hora) que hayas acordado con ellos, si les cobras el transporte o tiempo de tu traslado también lo puedes incluir.</li>
@@ -121,7 +122,7 @@
 
 
   <!-- Footer -->
-  <footer class="page-footer bg-dark">
+  <footer class="page-footer bg-dark" id="footer">
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
