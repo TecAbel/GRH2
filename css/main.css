@@ -114,7 +114,7 @@ textarea {
   /*********** HERO*****************/
   .hero-index{
     text-align: center;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/work.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.1) 100%), url("../img/work.jpg");
     background-position: center;
     border-radius: 0;
     color: white;
@@ -127,48 +127,25 @@ textarea {
     height: 100vh;
   }
   .down{
-    margin-top: 20vh;
+    margin-top: 10vh;
   }
   .down i{
-    margin-top: 10vh;
+    margin-top: 2vh;
     font-size: 3rem;
   }
 
 
   /************************** NAVBAR ********************/
-
-  .nav-links{
-    position: fixed;
-    background: #343a40;
-    height: 100vh!important;
-    width: 100%!important;
-    z-index: 5;
-    top: 0;
-  }
   .nav-links{
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-left: auto;/*lo manda a la derecha*/
     list-style: none;
     width: 50%;
     height: 100%;
     padding: 0;
-    clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(100px at 90% -20%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-  }
-  .nav-links.open{
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-    pointer-events: all;
-  }
-  .nav-links li a{
-      
-    color: white!important;
-    text-decoration: none;
   }
   nav{
     position: sticky;
@@ -179,22 +156,56 @@ textarea {
     background-color: #343a40;
     margin-bottom: 20px;
   }
+  .nav-links li a{
+    color: white!important;
+    text-decoration: none;
+    transition: all .5s ease-out;
+  }
+  .nav-links li a:hover{
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    color: #343a40!important;
+  }
   .hamburguesa{
-    color: white;
-    position: absolute;
-    right: 5%;
-    font-size: 20px;
-    top: 50%;
-    transform: translate(-5%, -50%);
-    z-index: 6;
+    display: none;
   }
-  .hamburguesa:hover{
-    cursor: pointer;
-  }
-  @media only screen and (min-width: 768px){
+  @media only screen and (max-width: 768px){
+    .hamburguesa{
+      display: block;
+    }
+    .nav-links{
+      clip-path: circle(100px at 90% -20%);
+      -webkit-clip-path: circle(100px at 90% -20%);
+      transition: all .5s ease-out;
+      pointer-events: none;
+      flex-direction: column;
+      position: fixed;
+      background: #343a40;
+      height: 100vh!important;
+      width: 100%!important;
+      z-index: 5;
+      top: 0;
+    }
+    .nav-links.open{
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+    }
     
     
-    
+    .hamburguesa{
+      color: white;
+      position: absolute;
+      right: 5%;
+      font-size: 20px;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 6;
+    }
+    .hamburguesa:hover{
+      cursor: pointer;
+    }
   }
 
 
