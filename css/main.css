@@ -192,6 +192,9 @@ textarea {
       z-index: 5;
       top: 0;
     }
+    .nav-links:last-child{
+      padding-right: 0;
+    }
     .nav-links.open{
       clip-path: circle(1000px at 90% -10%);
       -webkit-clip-path: circle(1000px at 90% -10%);
