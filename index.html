@@ -1,41 +1,115 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Estilos-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+      window.addEventListener("load", function(){
+          const script = document.createElement("script");
+          script.src = "js/animated-input.js";
+          document.body.appendChild(script);
+      });
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+  <title>GRH | Bienvendo</title>
+</head>
+<body>
+  <div class="jumbotron rounded-0 hero-index parallax">
+    <h1 class="display-3">Bienvendo a GRH &copy;</h1>
+    <hr class="my-4">
+    <p class="lead">Generador de Reporte de Honorarios</p>
+  </div>
+  <div class="container clearfix">
+      <div class="container der">
+          <form method="POST" id="frmRegistro" onsubmit="javascript: return false;">
+            <div class="card bg-dark frmOscuro">
+              <div class="card-header">
+                <h5>¿Deseas obtener tu cuenta?</h5>
+              </div>
+              <div class="card-body">
+                <h6>Aquí te puedes poner en contacto con nosotros.</h6>
+                <div class="form-group">
+                  <label class="form-label" for="txtCorreo">Correo</label>
+                  <input type="text" class="form-input w-100" id="txtCorreo">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="txtNombre">Nombre completo</label>
+                  <input type="text" class="form-input w-100" id="txtNombre">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success rounded-0 w-100">Enviar información</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <form method="POST" id="frmLogin" onsubmit="javascript: return false;">
+            <div class="card bg-dark frmOscuro">
+              <div class="card-header">
+                <h5>¿Ya eres usuario?</h5>
+              </div>
+              <div class="card-body">
+                <h6>Ingresa tus claves de acceso.</h6>
+                <div class="form-group">
+                  <label class="form-label" for="txtCorreoLog">Correo</label>
+                  <input type="text" class="form-input w-100" id="txtCorreoLog">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="txtPass">Contraseña</label>
+                  <input type="password" class="form-input w-100" id="txtPass">
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-info rounded-0 w-100">Ingresar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+    <div class="container izq">
+      <article>
+        <h3>¿Para qué me puede servir GRH&copy;?</h3>
+        <p>Te ayudamos en la administración de tus cobros, GRH&copy; desarrolla las siguientes tareas por ti:</p>
+        <ul>
+          <li>Administra tu lista de empleadores así como su información de contacto y la cuota ($ por hora) que hayas acordado con ellos, si les cobras el transporte o tiempo de tu traslado también lo puedes incluir.</li>
+          <li>GRH&copy; calcula el total de horas en las que hayas trabajo, tú solo tienes que poner la hora de inicio y la hora del término de tu actividad.</li>
+          <li>Genera un reporte de cobro para que lo puedas presentar con tu empleador o mandarlo directamente por correo electrónico.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>¿Es necesario estar registrado ante SAT?</h3>
+        <p>
+          La respuesta más rápida es <strong>NO</strong>, pues GRH&copy; está dirigido a un negocio más informal. Más específicamente a gente que labora de manera informal; trato solo de palabra o para gente que acaba de obtener su primer empleo y necesita ayuda para administrarse y si no la necesita podemos facilitarle la tarea.
+        </p>
+        <p>Si ya estás registrado ante el SAT podemos ser tu mayor aliado, pues a la hora de calcular tus ingresos los reportes de cobro ya tendrán enta información, lo único que deberás hacer es sumar el total de que viene en cada reporte que hayas generado durante el mes o bimestre.</p>
+      </article>
+      <article>
+        <h3>¿Tiene algún costo su uso?</h3>
+        De <strong>momento no</strong>, GRH&copy; está en modo beta. Lo que quiere decir que aún no está desarrollada en su totalidad, aún faltan detalles por pulirse. Cuando nuestra aplicación esté lista se cobrará por el uso, pero no te procupes, que no será muy elevado y habrán planes para aquellos que usen nuestra app frecuentemente y quieran ahorrarse unos pesos.
+      </article>
+    </div>
+    
+  </div>
 
+
+
+  <!-- Footer -->
+  <footer class="page-footer bg-dark">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      Abelardo Aqui
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+<!-- Footer -->
+</body>
 </html>

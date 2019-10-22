@@ -98,6 +98,114 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /********generales*********************************/
+  body{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  hr {
+    border: 0 none #ffffff;
+    border-top: 1px solid #ffffff!important;
+    height: 1px;
+    margin: 5px 0;
+    display: block;
+    clear: both;
+    }
+  /*********** HERO*****************/
+  .hero-index{
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/work.jpg");
+    background-position: center;
+    border-radius: 0;
+    color: white;
+    /***efecto parallax********/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /**********acticulos******************/
+
+  article{
+    margin-bottom: 30px;
+  }
+
+
+  /*************contenedores************/
+  @media only screen and (min-width: 768px){
+    .container.izq{
+      float: left;
+      width: 70%;
+    }
+    .container.der{
+      float: right;
+      width: 30%;
+    }
+  }
+
+
+  /************formularios***************/
+
+  .input-group{
+    margin: 15px auto;
+  }
+  .input-group input{
+    border-style: none;
+    border-bottom: #3e444b 2px solid;
+    border-radius: 0;
+  }
+  .card{
+    margin-bottom: 20px;
+  }
+  .form-group {
+    position:relative;  
+  
+   
+  }
+  .form-group:last-child{
+    margin-bottom: 0;
+  }
+  .form-label {
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #999;
+    z-index: 1;
+    transition: transform 150ms ease-out, font-size 150ms ease-out;
+  }
+  
+  
+  .focused .form-label {
+    transform: translateY(-125%);
+    font-size: .75em;
+  }
+  .form-input {
+    position: relative;
+    padding: 12px 0px 5px 0;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 2px 0 0 #707070;
+    transition: box-shadow 150ms ease-out;
+    background-color: transparent;
+  }
+  .frmOscuro{
+    color: white;
+  }
+  .frmOscuro input{
+    color: white;
+  }
+
+
+  /*************************footer*************************/
+  footer{
+    bottom: 0;
+    color: white;
+  }
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
