@@ -138,7 +138,7 @@ textarea {
   /************************** NAVBAR ********************/
   .nav-links{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around!important;
     flex-direction: row;
     align-items: center;
     margin-left: auto;/*lo manda a la derecha*/
@@ -146,7 +146,10 @@ textarea {
     width: 50%;
     height: 100%;
     padding: 0;
-    padding-right: 20vw;
+  }
+  .nav-links:last-child{
+    
+    padding-right: 30px;
   }
   nav{
     position: sticky;
@@ -185,6 +188,7 @@ textarea {
       background: #343a40;
       height: 100vh!important;
       width: 100%!important;
+      padding: 0;
       z-index: 5;
       top: 0;
     }
