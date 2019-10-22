@@ -11,13 +11,18 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <!--jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
       window.addEventListener("load", function(){
-          const script = document.createElement("script");
+          const script = document.createElement("script"),
+                script2 = document.createElement("script");
           script.src = "js/animated-input.js";
+          script2.src = "js/nav.js";
           document.body.appendChild(script);
+          document.body.appendChild(script2);
       });
   </script>
   <title>GRH | Bienvendo</title>
@@ -27,9 +32,45 @@
     <h1 class="display-3">Bienvendo a GRH &copy;</h1>
     <hr class="my-4">
     <p class="lead">Generador de Reporte de Honorarios</p>
+    <div class="down">
+      <h3>Organízate, crece y da un toque de formalidad a tu trabajo</h3>
+      <i class="fas fa-arrow-down"></i>
+    </div>
   </div>
+  <nav class="nav-index">
+    <div class="hamburguesa">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Ingreso</a></li>
+      <li><a href="#">Registro</a></li>
+      <li><a href="#">Sobre GRH</a></li>
+      <li><a href="#">Desarrollador</a></li>
+    </ul>
+  </nav>
   <div class="container clearfix">
       <div class="container der">
+          <form method="POST" id="frmLogin" onsubmit="javascript: return false;">
+            <div class="card bg-dark frmOscuro">
+              <div class="card-header">
+                <h5>Ingreso</h5>
+              </div>
+              <div class="card-body">
+                <h6>Ingresa tus claves de acceso.</h6>
+                <div class="form-group">
+                  <label class="form-label" for="txtCorreoLog">Correo</label>
+                  <input type="text" class="form-input w-100" id="txtCorreoLog">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="txtPass">Contraseña</label>
+                  <input type="password" class="form-input w-100" id="txtPass">
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-info rounded-0 w-100">Entrar</button>
+              </div>
+            </div>
+          </form>
           <form method="POST" id="frmRegistro" onsubmit="javascript: return false;">
             <div class="card bg-dark frmOscuro">
               <div class="card-header">
@@ -45,30 +86,9 @@
                   <label class="form-label" for="txtNombre">Nombre completo</label>
                   <input type="text" class="form-input w-100" id="txtNombre">
                 </div>
-                <div class="form-group">
-                    <button class="btn btn-success rounded-0 w-100">Enviar información</button>
-                </div>
               </div>
-            </div>
-          </form>
-          <form method="POST" id="frmLogin" onsubmit="javascript: return false;">
-            <div class="card bg-dark frmOscuro">
-              <div class="card-header">
-                <h5>¿Ya eres usuario?</h5>
-              </div>
-              <div class="card-body">
-                <h6>Ingresa tus claves de acceso.</h6>
-                <div class="form-group">
-                  <label class="form-label" for="txtCorreoLog">Correo</label>
-                  <input type="text" class="form-input w-100" id="txtCorreoLog">
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="txtPass">Contraseña</label>
-                  <input type="password" class="form-input w-100" id="txtPass">
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-info rounded-0 w-100">Ingresar</button>
-                </div>
+              <div class="card-footer">
+                <button class="btn btn-success rounded-0 w-100">Enviar información</button>
               </div>
             </div>
           </form>
