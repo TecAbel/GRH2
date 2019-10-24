@@ -163,6 +163,7 @@ textarea {
   .nav-links li a{
     color: white!important;
     text-decoration: none;
+    -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
   }
   .nav-links li a:hover{
@@ -179,8 +180,8 @@ textarea {
       display: block;
     }
     .nav-links{
-      clip-path: circle(100px at 90% -20%);
       -webkit-clip-path: circle(100px at 90% -20%);
+      clip-path: circle(100px at 90% -20%);
       transition: all 1s ease-out;
       pointer-events: none;
       flex-direction: column;
@@ -196,8 +197,8 @@ textarea {
       padding-right: 0;
     }
     .nav-links.open{
-      clip-path: circle(1000px at 90% -10%);
       -webkit-clip-path: circle(1000px at 90% -10%);
+      clip-path: circle(1000px at 90% -10%);
       pointer-events: all;
     }
     
@@ -208,6 +209,7 @@ textarea {
       right: 5%;
       font-size: 20px;
       top: 50%;
+      -webkit-transform: translate(-5%, -50%);
       transform: translate(-5%, -50%);
       z-index: 6;
     }
