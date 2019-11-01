@@ -182,8 +182,6 @@ textarea {
     .nav-links{
       -webkit-clip-path: circle(100px at 90% -20%);
       clip-path: circle(100px at 90% -20%);
-      -webkit-transition: all .8s ease-out;
-      transition: all .8s ease-out;
       pointer-events: none;
       flex-direction: column;
       position: fixed;
