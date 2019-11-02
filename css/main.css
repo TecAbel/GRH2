@@ -172,6 +172,10 @@ textarea {
     padding: 10px;
     color: #343a40!important;
   }
+  .nav-links li a.pag-actual{
+    padding: 4px;
+    border: white 1px solid!important;
+  }
   .hamburguesa{
     display: none;
   }
@@ -248,10 +252,11 @@ textarea {
   .input-group{
     margin: 15px auto;
   }
-  .input-group input{
+  .input-group input, textarea.input-group {
     border-style: none;
     border-bottom: #3e444b 2px solid;
     border-radius: 0;
+    background: transparent!important;
   }
   .card{
     margin-bottom: 20px;
@@ -305,6 +310,64 @@ hr{
 .card.bg-dark{
   color:white;
 }
+.card.bg-dark input,.card.bg-dark textarea {
+  color: white;
+  border-bottom: #ffffff 2px solid;
+}
+input.required{
+  border-bottom: rgb(216, 216, 88) 2px solid!important;
+}
+
+@media only screen and (min-width: 768px){
+  .container.frmIzq{
+    float: left!important;
+    width: 30%;
+  }
+  .container.tabla{
+    float: right!important;
+    width: 70%!important;
+  }
+  .container.clearfix{
+    padding: 0;
+  }
+}
+
+
+/******tablas********/
+.tabla{
+  text-align: center;
+}
+
+/******tabla responsive*******/
+@media only screen and (max-width: 700px){
+  table {
+      width:100%;
+  }
+  thead {
+      display: none;
+  }
+  tr:nth-of-type(2n) {
+      background-color: inherit;
+  }
+  tr td:first-child {
+      background: #f0f0f0;
+      font-weight:bold;
+      font-size:1.3em;
+  }
+  tbody td {
+      display: block;
+      text-align:center;
+  }
+  tbody td:last-child{
+      padding-bottom: 20px;
+  }
+  tbody td:before {
+      content: attr(data-th);
+      display: block;
+      text-align:center;
+  }
+}
+
 
   /*************************footer*************************/
   footer{

@@ -33,7 +33,7 @@
             <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Activiaddes</a></li>
+            <li><a class="pag-actual" href="#">Activiades</a></li>
             <li><a href="#">Historial</a></li>
             <li><a href="#">Reportes</a></li>
             <li><a href="#">Perfil</a></li>
@@ -41,40 +41,104 @@
         </ul>
     </nav>
     <div class="container">
-        <p>Aquí, a modo de tarjetas, verás la lista de empleadores registrados con los que cuentas, así como el estado en el que se encuentra contigo.</p>
-        <ul>
-            <li class="text-success">Por cobrar</li>
-            <li class="text-warning">Sin actividades</li>
-        </ul>
         <div class="container contenedor-tarjetas">
             <hr>
-            <h3 class="text-center">Empleadores registrados</h3>
+            <h3 class="text-center">Actividades</h3>
             <hr>
         </div>
-        <div class="clearfix">
-            <div class="frmIzq">
+        <div class="container">
+            <article>
+            <p>Aquí, a modo de tarjetas, verás la lista de actividades registradas que has desempeñado con <strong>Empleador</strong> de <strong>Empresa</strong></p>
+            
+            <p class="text-center"><span class="text-warning">NOTA</span>: Los campos de <span class="text-warning">línea amarilla</span> son obligatorios.</p>
+        </article>
+        </div>
+        
+        <div class="container clearfix">
+            <div class="container frmIzq">
                 <div class="card bg-dark">
                     <div class="card-header">
-                        <h3>Nueva activiadad</h3>
+                        <h3>Nueva actividad</h3>
                     </div>
                     <div class="card-body">
                         <form method="post" onsubmit="javasccript: return false;" id="frmActividade">
                             <div class="form-group">
-                                <label for="txtFecha" class="form-label">Fecha</label>
-                                <input class="form-input"type="date" name="txtFecha" id="txtFecha" placeholder="off">
+                                <label for="txtFecha" class="">Fecha</label>
+                                <input class="form-input required"type="date" name="txtFecha" id="txtFecha" placeholder="off">
                             </div>
                             <div class="form-group">
-                                <label class="form-label" for="txtInicio">Inicio</label>
-                                <input class="form-input"type="time" name="txtInicio" id="txtInicio">
+                                <label class="" for="txtInicio">Inicio</label>
+                                <input class="form-input required"type="time" name="txtInicio" id="txtInicio">
                             </div>
                             <div class="form-group">
-                                <label class="form-label" for="txtSalida">Inicio</label>
-                                <input class="form-input"type="time" name="txtSalida" id="txtSalida">
+                                <label class="" for="txtSalida">Inicio</label>
+                                <input class="form-input required"type="time" name="txtSalida" id="txtSalida">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="txtActividad">Actividad</label>
+                                <input class="form-input required"type="text" name="txtActividad" id="txtActividad">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="txtDetalle">Detalles</label>
+                                <textarea class="input-group" name="txtDetalle" id="txtDetalle" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="txtTransporte">$ Transporte</label>
+                                <input class="form-input "type="number" name="txtTransporte" id="txtTransporte">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-success rounded-0 w-100">Agregar actividad</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+            <div class="container tabla">
+                    <form onsubmit="javascript: return false;" method="post">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Inicio</th>
+                                    <th scope="col">Salida</th>
+                                    <th scope="col">Actividad</th>
+                                    <th scope="col">Detalle</th>
+                                    <th scope="col">Transporte</th>
+                                    <th scope="col">Editar/Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01/11/19</td>
+                                    <td>10:00</td>
+                                    <td>11:00</td>
+                                    <td>Desarrollo</td>
+                                    <td>Diseño web</td>
+                                    <td>$0</td>
+                                    <td><a href="#" class="btn btn-info rounded-0"><i class="far fa-edit"></i>/ <i class="fas fa-trash-alt"></i></a></td>
+                                </tr>
+                                <tr>
+                                        <td>01/11/19</td>
+                                        <td>10:00</td>
+                                        <td>11:00</td>
+                                        <td>Desarrollo</td>
+                                        <td>Diseño web</td>
+                                        <td>$0</td>
+                                        <td><a href="#" class="btn btn-info rounded-0"><i class="far fa-edit"></i>/ <i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                            <td>01/11/19</td>
+                                            <td>10:00</td>
+                                            <td>11:00</td>
+                                            <td>Desarrollo</td>
+                                            <td>Diseño web</td>
+                                            <td>$0</td>
+                                            <td><a href="#" class="btn btn-info rounded-0"><i class="far fa-edit"></i>/ <i class="fas fa-trash-alt"></i></a></td>
+                                        </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
         </div>
     </div>
 </body>
