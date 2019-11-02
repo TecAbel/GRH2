@@ -305,7 +305,7 @@ hr{
   border:0;
   border-bottom: #6c757d 1px solid!important;
   display: block;
-  width: 96%;
+  width: 100%;
 }
 .card.bg-dark{
   color:white;
@@ -321,11 +321,14 @@ input.required{
 @media only screen and (min-width: 768px){
   .container.frmIzq{
     float: left!important;
-    width: 30%;
+    margin-right: 0;
+    padding-right: 0;
+    width: 24%;
   }
   .container.tabla{
+    padding-left: 0;
     float: right!important;
-    width: 70%!important;
+    width: 75%;
   }
   .container.clearfix{
     padding: 0;
