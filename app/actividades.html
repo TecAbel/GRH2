@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Estilos-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            const script = document.createElement("script"),
+                    script2 = document.createElement("script");
+            script.src = "../js/animated-input.js";
+            script2.src = "../js/nav.js";
+            document.body.appendChild(script);
+            document.body.appendChild(script2);
+        });
+    </script>
+    <title>GRH | Actividades</title>
+</head>
+<body>
+    <nav class="nav-index">
+        <div class="hamburguesa">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Activiaddes</a></li>
+            <li><a href="#">Historial</a></li>
+            <li><a href="#">Reportes</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Empleadores</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>Aquí, a modo de tarjetas, verás la lista de empleadores registrados con los que cuentas, así como el estado en el que se encuentra contigo.</p>
+        <ul>
+            <li class="text-success">Por cobrar</li>
+            <li class="text-warning">Sin actividades</li>
+        </ul>
+        <div class="container contenedor-tarjetas">
+            <hr>
+            <h3 class="text-center">Empleadores registrados</h3>
+            <hr>
+        </div>
+        <div class="clearfix">
+            <div class="frmIzq">
+                <div class="card bg-dark">
+                    <div class="card-header">
+                        <h3>Nueva activiadad</h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" onsubmit="javasccript: return false;" id="frmActividade">
+                            <div class="form-group">
+                                <label for="txtFecha" class="form-label">Fecha</label>
+                                <input class="form-input"type="date" name="txtFecha" id="txtFecha" placeholder="off">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="txtInicio">Inicio</label>
+                                <input class="form-input"type="time" name="txtInicio" id="txtInicio">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="txtSalida">Inicio</label>
+                                <input class="form-input"type="time" name="txtSalida" id="txtSalida">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

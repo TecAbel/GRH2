@@ -238,8 +238,11 @@ textarea {
       width: 30%;
     }
   }
-
-
+  ::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+  ::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+  ::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+      color: transparent;
+  }
   /************formularios***************/
 
   .input-group{
@@ -292,7 +295,16 @@ textarea {
   .frmOscuro input{
     color: white;
   }
-
+/**********CUERPO***********/
+hr{
+  border:0;
+  border-bottom: #6c757d 1px solid!important;
+  display: block;
+  width: 96%;
+}
+.card.bg-dark{
+  color:white;
+}
 
   /*************************footer*************************/
   footer{
