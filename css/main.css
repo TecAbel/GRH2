@@ -237,6 +237,7 @@ textarea {
 
   article{
     margin-bottom: 30px;
+    text-align: center;
   }
 
 
@@ -267,7 +268,7 @@ textarea {
     border-radius: 0;
     background: transparent!important;
   }
-  .card{
+  .contenedor-tarjetas .card{
     margin-bottom: 20px;
   }
   .form-group {
@@ -334,7 +335,7 @@ input.required{
     padding-right: 0;
     width: 24%;
   }
-  .container.tabla{
+  .container.tabla, .container-fluid.tabla{
     padding-left: 0;
     float: right!important;
     width: 75%;
@@ -344,6 +345,40 @@ input.required{
   }
 }
 
+/********CARDS********/
+.card h3{
+  text-align: center;
+}
+
+.card{
+  margin-bottom: 10px!important;
+}
+.contenedor-tarjetas .card{
+  margin: 0 auto;
+  margin-bottom: 10px!important;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px){
+  .contenedor-tarjetas{
+    float: right;
+    width: 75%;
+  }
+  .contenedor-tarjetas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contenedor-tarjetas .card{
+    width: 30%;
+  }
+}
+.card .usuario{
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
 
 /******tablas********/
 .tabla{

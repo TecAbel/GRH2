@@ -33,22 +33,109 @@
             <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Activiades</a></li>
+            <li><a href="#">Actividades</a></li>
             <li><a href="#">Historial</a></li>
             <li><a href="#">Reportes</a></li>
+            <li><a class="pag-actual" href="#">Empleadores</a></li>
             <li><a href="#">Perfil</a></li>
-            <li><a href="#">Empleadores</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
         </ul>
     </nav>
     <div class="container">
-        <article>
-            <p>Aquí, a modo de tarjetas, verás la lista de empleadores registrados con los que cuentas, así como el estado en el que se encuentra contigo.</p>
-            <ul>
-                <li class="text-success">Por cobrar</li>
-                <li class="text-warning">Sin actividades</li>
-            </ul>
-            <p><span class="text-warning">NOTA</span>: Los campos de <span class="text-warning">amarillo</span> son obligatorios.</p>
-        </article>
+        <div class="container contenedor-tarjetas">
+            <hr>
+            <h3 class="text-center">Empleadores</h3>
+            <hr>
+        
+            <article>
+                <p>Aquí, a modo de tarjetas, verás la lista de <strong>empleadores registrados</strong> con los que cuentas, así como información sobre ellos que hayas regsitrado.</p>
+                
+                <p class="text-center"><span class="text-warning">NOTA</span>: Los campos de <span class="text-warning">amarillo</span> son obligatorios.</p>
+            </article>
+            <hr>
+        </div>
+
+        <!--cuerpo-->
+    <div class="container clearfix">
+        <!--frm-->
+        <div class="container frmIzq">
+            <div class="card bg-dark">
+                <div class="card-header">
+                    <h3>Nuevo empleador</h3>
+                </div>
+                <div class="card-body">
+                    <form onsubmit="javascript: return false;" id="frmEmpleador" method="post">
+                            <div class="form-group">
+                                <label for="txtNombre" class="form-label">Nombre Empleador</label>
+                                <input class="form-input required"type="text" name="txtNombre" id="txtNombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEmpresa" class="form-label">Nombre Empresa</label>
+                                <input class="form-input"type="text" name="txtEmpresa" id="txtEmpresa">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtCorreo" class="form-label">Correo </label>
+                                <input class="form-input"type="text" name="txtCorreo" id="txtCorreo">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtTelefono" class="form-label">Teléfono </label>
+                                <input class="form-input"type="text" name="txtTelefono" id="txtTelefono">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtNumEmpleado" class="form-label">Número Empleado</label>
+                                <input class="form-input"type="text" name="txtNumEmpleado" id="txtNumEmpleado">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtCuota" class="form-label">Cuota/hora $</label>
+                                <input class="form-input"type="number   " name="txtCuota" id="txtCuota">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-success w-100 rounded-0">Agregar empleador</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--registros-->
+        <div class="container-fluid tabla contenedor-tarjetas">
+                
+            <div class="card bg-dark">
+                <h5 class="card-header text-center">Alfredo Gutiérrez</h5>
+                <div class="card-body">
+                    <div class="usuario"><i class="fas fa-user-circle"></i></div>
+                    <p>Empresa</p>
+                    <div class="form-group">
+                        <a href="#" class="btn btn-info rounded-0 w-100"><i class="far fa-edit"></i> <i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark">
+                <h5 class="card-header text-center">Alfredo Gutiérrez</h5>
+                <div class="card-body">
+                    <div class="usuario"><i class="fas fa-user-circle"></i></div>
+                    <p>Empresa</p>
+                    <div class="form-group">
+                        <a href="#" class="btn btn-info rounded-0 w-100"><i class="far fa-edit"></i> <i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark">
+                <h5 class="card-header text-center">Alfredo Gutiérrez</h5>
+                <div class="card-body">
+                    <div class="usuario"><i class="fas fa-user-circle"></i></div>
+                    <p>Empresa</p>
+                    <div class="form-group">
+                        <a href="#" class="btn btn-info rounded-0 w-100"><i class="far fa-edit"></i> <i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
+            
+
+    
 </body>
 </html>

@@ -43,7 +43,7 @@
         </ul>
     </nav>
     <div class="container">
-        <div class="container contenedor-tarjetas">
+        <div class="container">
             <hr>
             <h3 class="text-center">Actividades</h3>
             <hr>
@@ -67,19 +67,19 @@
                         <form method="post" onsubmit="javasccript: return false;" id="frmActividade">
                             <div class="form-group">
                                 <label for="txtFecha" class="form-label">Fecha</label>
-                                <input class="form-input"type="date" name="txtFecha" id="txtFecha" placeholder="off">
+                                <input class="form-input required"type="date" name="txtFecha" id="txtFecha">
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="txtInicio">Inicio</label>
-                                <input class="form-input"type="time" name="txtInicio" id="txtInicio">
+                                <input class="form-input required"type="time" name="txtInicio" id="txtInicio">
                             </div>
                             <div class="form-group">
-                                <label class="form-label" for="txtSalida">Inicio</label>
-                                <input class="form-input"type="time" name="txtSalida" id="txtSalida">
+                                <label class="form-label" for="txtSalida">Salida</label>
+                                <input class="form-input required"type="time" name="txtSalida" id="txtSalida">
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="txtActividad">Actividad</label>
-                                <input class="form-input"type="text" name="txtActividad" id="txtActividad">
+                                <input class="form-input required"type="text" name="txtActividad" id="txtActividad">
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="txtDetalle">Detalles</label>
@@ -97,21 +97,30 @@
                 </div>
             </div>
             <div class="container tabla">
-                    <form onsubmit="javascript: return false;" method="post">
-                        <table class="table">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">Fecha</th>
-                                    <th scope="col">Inicio</th>
-                                    <th scope="col">Salida</th>
-                                    <th scope="col">Actividad</th>
-                                    <th scope="col">Detalle</th>
-                                    <th scope="col">Transporte</th>
-                                    <th scope="col">Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
+                <form onsubmit="javascript: return false;" method="post">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Inicio</th>
+                                <th scope="col">Salida</th>
+                                <th scope="col">Actividad</th>
+                                <th scope="col">Detalle</th>
+                                <th scope="col">Transporte</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01/11/19</td>
+                                <td>10:00</td>
+                                <td>11:00</td>
+                                <td>Desarrollo</td>
+                                <td>Diseño web</td>
+                                <td>$0</td>
+                                <td><a href="#" class="btn btn-info rounded-0"><i class="far fa-edit"></i> <i class="fas fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
                                     <td>01/11/19</td>
                                     <td>10:00</td>
                                     <td>11:00</td>
@@ -121,27 +130,18 @@
                                     <td><a href="#" class="btn btn-info rounded-0"><i class="far fa-edit"></i> <i class="fas fa-trash-alt"></i></a></td>
                                 </tr>
                                 <tr>
-                                        <td>01/11/19</td>
-                                        <td>10:00</td>
-                                        <td>11:00</td>
-                                        <td>Desarrollo</td>
-                                        <td>Diseño web</td>
-                                        <td>$0</td>
-                                        <td><a href="#" class="btn btn-info rounded-0"><i class="far fa-edit"></i> <i class="fas fa-trash-alt"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                            <td>01/11/19</td>
-                                            <td>10:00</td>
-                                            <td>11:00</td>
-                                            <td>Desarrollo</td>
-                                            <td>Diseño web</td>
-                                            <td>$0</td>
-                                            <td><a href="#" class="btn btn-info rounded-0"><i class="far fa-edit"></i> <i class="fas fa-trash-alt"></i></a></td>
-                                        </tr>
-                            </tbody>
-                        </table>
-                    </form>
-                </div>
+                                    <td>01/11/19</td>
+                                    <td>10:00</td>
+                                    <td>11:00</td>
+                                    <td>Desarrollo</td>
+                                    <td>Diseño web</td>
+                                    <td>$0</td>
+                                    <td><a href="#" class="btn btn-info"><i class="far fa-edit"></i> <i class="fas fa-trash-alt"></i></a></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
         </div>
     </div>
 </body>
