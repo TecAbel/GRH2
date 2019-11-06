@@ -99,6 +99,10 @@ textarea {
    ========================================================================== */
 
   /********generales*********************************/
+  :root{
+    --primarioRojo: #ED0526;
+    --primarioAzul: #00328E
+  }
   body{
     font-family: 'Montserrat', sans-serif;
   }
@@ -221,7 +225,12 @@ textarea {
     }
   }
 
-
+/************IMAGEN LOGO INDEX***********/
+.logo-index{
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
 
 
   /**********acticulos******************/
