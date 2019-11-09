@@ -1,6 +1,6 @@
 $(function(){
     var alturaBarra = $('.barra').innerHeight();
-    $('body').css({'margin-top': (alturaBarra + 5) + 'px'});
+    $('body').css({'margin-top': (alturaBarra + 15) + 'px'});
 
     $('.hamburguesa').click(function () {
         $('.navegacion-principal').slideToggle();

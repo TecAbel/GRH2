@@ -180,6 +180,7 @@ textarea {
     }
   }
   .navegacion-principal a{
+    font-weight: bold;
     color: white;
     text-transform: uppercase;
     text-decoration: none!important;
@@ -187,12 +188,11 @@ textarea {
     text-align: center;
     display: block;
     clear: both;
-    transition: .6s ease-in-out;
+    transition: .6s ;
   }
 
   .navegacion-principal a:hover{
     border-radius: 5px;
-    font-weight: bold;
     padding: 5px;
     background-color: #ffffff;
     color: #343a40;
