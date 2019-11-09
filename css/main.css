@@ -191,12 +191,16 @@ textarea {
   }
 
   .navegacion-principal a:hover{
-    text-shadow: 0 0 30px white;
-    color: red;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #ffffff;
+    color: #343a40;
   }
 
-  .navegacion-principal.activo{
-    border-bottom: white1px solid;
+  .navegacion-principal a.activo{
+    border: white 1px solid;
+    padding: 5px;
   }
   
     .hamburguesa{
