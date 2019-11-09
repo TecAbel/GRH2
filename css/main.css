@@ -140,90 +140,82 @@ textarea {
 
 
   /************************** NAVBAR ********************/
-  .nav-links{
-    display: flex;
-    justify-content: space-around!important;
-    flex-direction: row;
-    align-items: center;
-    margin-left: auto;/*lo manda a la derecha*/
-    list-style: none;
-    width: 50%;
-    height: 100%;
-    padding: 0;
-  }
-  .nav-links:last-child{
-    
-    padding-right: 30px;
-  }
-  nav{
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0; /* required */
-    z-index: 2;
-    height: 8vh;
+  .barra{
     background-color: #343a40;
-    margin-bottom: 20px;
+    width: 100%;
   }
-  .nav-links li a{
-    color: white!important;
-    text-decoration: none;
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+  .barra.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
   }
-  .nav-links li a:hover{
-    font-weight: bold;
-    background-color: white;
-    padding: 10px;
-    color: #343a40!important;
-  }
-  .nav-links li a.pag-actual{
-    padding: 4px;
-    border: white 1px solid!important;
-  }
-  .hamburguesa{
+  .navegacion-principal{
     display: none;
+    width: 100%;
   }
-  @media only screen and (max-width: 768px){
+
+  .navegacion-principal .activo{
+    border-bottom: white 1px solid;
+  }
+  @media only screen and (min-width: 768px){
+    .hamburguesa{
+      display: none!important;
+    }
+    .navegacion-principal{
+      display: block; /*unico que funciona*/
+      text-align: right;
+      width: 70%;
+      float: right;
+      margin: 6px 0;
+ 
+    }
+    .navegacion-principal a{
+      margin: 10px 10px 10px 0;
+      display: inline-block!important;
+    }
+    .navegacion-principal a :last-child{
+       padding-right: 0;
+    }
+  }
+  .navegacion-principal a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none!important;
+    font-size: 1.2em;
+    text-align: center;
+    display: block;
+    clear: both;
+    transition: .6s ease-in-out;
+  }
+
+  .navegacion-principal a:hover{
+    text-shadow: 0 0 30px white;
+    color: red;
+  }
+
+  .navegacion-principal.activo{
+    border-bottom: white1px solid;
+  }
+  
     .hamburguesa{
       display: block;
     }
-    .nav-links{
-      -webkit-clip-path: circle(100px at 90% -20%);
-      clip-path: circle(100px at 90% -20%);
-      pointer-events: none;
-      flex-direction: column;
-      position: fixed;
-      background: #343a40;
-      height: 100vh!important;
-      width: 100%!important;
-      padding: 0;
-      z-index: 5;
-      top: 0;
-    }
-    .nav-links:last-child{
-      padding-right: 0;
-    }
-    .nav-links.open{
-      -webkit-clip-path: circle(1000px at 90% -10%);
-      clip-path: circle(1000px at 90% -10%);
-      pointer-events: all;
-    }
+    
     
     
     .hamburguesa{
+      font-size: 1.4em;
+      display: block;
+      float: right;
+      margin: 10px;
       color: white;
-      position: absolute;
-      right: 5%;
-      font-size: 20px;
-      top: 50%;
-      -webkit-transform: translate(-5%, -50%);
-      transform: translate(-5%, -50%);
-      z-index: 6;
     }
     .hamburguesa:hover{
       cursor: pointer;
     }
-  }
+  
 
 /************IMAGEN LOGO INDEX***********/
 .logo-index{

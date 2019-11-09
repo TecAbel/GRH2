@@ -18,30 +18,34 @@
     <script>
         window.addEventListener("load", function(){
             const script = document.createElement("script"),
-                    script2 = document.createElement("script");
+                    script3 = document.createElement('script');
             script.src = "../js/animated-input.js";
-            script2.src = "../js/nav.js";
+            script3.src = '../js/main.js';
             document.body.appendChild(script);
-            document.body.appendChild(script2);
+            document.body.appendChild(script3);
         });
     </script>
     
     <title>GRH | Actividades</title>
 </head>
 <body>
-    <nav class="nav-index">
-        <div class="hamburguesa">
-            <i class="fas fa-bars"></i>
+    <div class="barra fixed">
+        <div class="container clearfix">
+            <div class="hamburguesa">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="navegacion-principal">
+                <a href="" class="activo">Actividades</a>
+                <a href="#">Historial</a>
+                <a href="#">Reportes</a>
+                <a href="#">Empleadores</a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+            </nav>
         </div>
-        <ul class="nav-links">
-            <li><a class="pag-actual" href="#">Actividades</a></li>
-            <li><a href="#">Historial</a></li>
-            <li><a href="#">Reportes</a></li>
-            <li><a href="#">Empleadores</a></li>
-            <li><a href="#">Perfil</a></li>
-            <li><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
-        </ul>
-    </nav>
+    </div>
+    
+    
     <div class="container">
         <div class="container">
             <hr>
