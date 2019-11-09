@@ -172,7 +172,7 @@ textarea {
  
     }
     .navegacion-principal a{
-      margin: 10px 10px 10px 0;
+      margin: 10px 10px 10px 0!important;
       display: inline-block!important;
     }
     .navegacion-principal a :last-child{
@@ -180,6 +180,7 @@ textarea {
     }
   }
   .navegacion-principal a{
+    margin-bottom: 20px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
